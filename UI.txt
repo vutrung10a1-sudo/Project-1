@@ -105,7 +105,7 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;opac
 
 /* ── vùng chính văn ── */
 .wx-story{padding:20px 18px;border-bottom:1px solid hsla(42,68%,52%,0.08);animation:fadeInUp 0.6s var(--ease-silk) both}
-#wx-content{font-family:'Be Vietnam Pro', sans-serif;font-size:18px;line-height:2.1;color:var(--text);text-align:justify;text-justify:inter-word;word-break:break-word;
+#wx-content{font-family:'Be Vietnam Pro', sans-serif;font-size:16px;line-height:2.1;color:var(--text);text-align:justify;text-justify:inter-word;word-break:break-word;
   padding:20px 22px;background:var(--glass);border:1px solid var(--glass-border);border-radius:var(--radius-l);
   backdrop-filter:blur(var(--glass-blur));min-height:60px;position:relative;overflow:hidden;
   box-shadow:0 4px 24px hsla(0,0%,0%,0.2),inset 0 0 40px hsla(6,72%,20%,0.04),inset 0 1px 0 hsla(42,68%,52%,0.06)}
