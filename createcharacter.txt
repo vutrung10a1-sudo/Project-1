@@ -1381,12 +1381,14 @@ function buildKungfuList() {
       { id: 'Nông Phu Kiếm Pháp', name: 'Nông Phu Kiếm Pháp', desc: 'Kiếm chiêu đơn giản, lấy xảo thắng địch, linh hoạt nhẹ nhàng.', tag: 'Kiếm', tagClass: 'tag-sword', cardClass: 'tag-sword-card', stat: 'Kiếm' },
       { id: 'Nông Phu Đao Pháp', name: 'Nông Phu Đao Pháp', desc: 'Đại khai đại hợp, cương mãnh bá đạo, đao thuật dũng mãnh tiến tới.', tag: 'Đao', tagClass: 'tag-blade', cardClass: 'tag-blade-card', stat: 'Đao' },
       { id: 'Đàn Cung Xạ Kích', name: 'Đàn Cung Xạ Kích', desc: 'Bách bộ xuyên dương, lấy xảo khắc địch, kỹ năng ám khí bất ngờ.', tag: 'Ám_khí', tagClass: 'tag-hidden', cardClass: 'tag-hidden-card', stat: 'Ám_khí' },
+      { id: 'Hoa Sơn Kiếm Pháp', name: 'Hoa Sơn Kiếm Pháp', desc: 'Kiếm pháp cơ bản phái Hoa Sơn, nhẹ nhàng phiêu dật, công thủ vẹn toàn.', tag: 'Kiếm', tagClass: 'tag-sword', cardClass: 'tag-sword-card', stat: 'Kiếm' }
     ];
   }
   const lib = getAllKungfu();
   _kungfuLibCache = lib;
-  const STARTER_NAMES = ['Nhân Dân Thiết Quyền','Nông Phu Côn Pháp','Nông Phu Kiếm Pháp','Nông Phu Đao Pháp','Đàn Cung Xạ Kích'];
-  const STARTER_STAT  = { 'Nhân Dân Thiết Quyền':'Quyền_chưởng', 'Nông Phu Côn Pháp':'Côn_thương', 'Nông Phu Kiếm Pháp':'Kiếm', 'Nông Phu Đao Pháp':'Đao', 'Đàn Cung Xạ Kích':'Ám_khí' };
+  const STARTER_NAMES = ['Nhân Dân Thiết Quyền','Nông Phu Côn Pháp','Nông Phu Kiếm Pháp','Nông Phu Đao Pháp','Đàn Cung Xạ Kích', 'Hoa Sơn Kiếm Pháp'];
+  const STARTER_STAT  = { 'Nhân Dân Thiết Quyền':'Quyền_chưởng', 'Nông Phu Côn Pháp':'Côn_thương', 'Nông Phu Kiếm Pháp':'Kiếm', 'Nông Phu Đao Pháp':'Đao', 'Đàn Cung Xạ Kích':'Ám_khí', 'Hoa Sơn Kiếm Pháp':'Kiếm' };
+  
   return STARTER_NAMES
     .map(name => lib[name] || Object.values(lib).find(k => k.Tên === name))
     .filter(Boolean)
